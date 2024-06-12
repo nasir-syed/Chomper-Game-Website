@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>chomper</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+
+    <body>
+
+        <!-- navigation bar -->
+        <div id="topbar">
+            <div class="pacman"></div>
+            <h3>HOMPER</h3>
+            <div id="navbar">
+              <a href="index.html" class="navlink">ABOUT</a>
+              <a href="game.html" class="navlink">GAME</a>
+              <a href = "leaderboard.html" class="navlink">LEADERBOARD</a>
+            </div>
+            <div id="navbarsignlog">
+                <a href="signup.html" class="navlink" id="signupLink">SIGN UP</a>
+                <a href="login.html" class="navlink" id="loginLink">LOGIN</a>
+                <button id= "logoutBtn" class="navlink" onclick="logout()">LOGOUT</button>
+            </div>
+        </div>
+
+
+        <!-- game image, score and lives counter -->
+        <div id="game">
+            <div id="scoreandlives">
+                <p>SCORE: </p>
+                <p id="score">0</p>
+
+                <p style="margin-left: 60%;"> LIVES: </p>
+                <p id="lives">2</p>
+            </div>
+            <canvas id="myCanvas"></canvas>
+
+            <div id="userandscore">
+                <p > PLAYER: </p>
+                <p id="userTag">GUEST</p>
+
+                <p style="margin-left: 40%;"> HI-SCORE: </p>
+                <p id="HS"> 0 </p>
+            </div>
+
+        </div>
+        <div id="keys"> 
+            <p>W</p>
+            <p>A</p>
+            <p>S</p>
+            <p>D</p>
+        </div> 
+        <div id="instructions">
+            <p>move up</p>
+            <p>move left</p>
+            <p>move down</p>
+            <p>move right</p>
+        </div>
+   
+
+
+
+
+        </div>
+
+        <!-- footer -->
+        <div id="footer">
+
+            <p>Website by Syed Nasiruddin</p>
+
+        </div>
+
+    </body>
+
+
+    <script src= ../js/signupLoginLogout.js></script>
+    <script type="module" src="../js/game.js"></script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>chomper</title>
+        <link rel="stylesheet" href="../css/style.css">
+
+
+    </head>
+
+
+    <body>
+
+      <!-- navigation bar -->
+        <div id="topbar">
+          <div class="pacman"></div>
+            <h3>HOMPER</h3>
+            <div id="navbar">
+              <a href="index.html" class="navlink">ABOUT</a>
+              <a href="game.html" class="navlink">GAME</a>
+              <a href = "leaderboard.html" class="navlink">LEADERBOARD</a>
+            </div>
+            <div id="navbarsignlog">
+              <a href="signup.html" class="navlink" id="signupLink">SIGN UP</a>
+              <a href="login.html" class="navlink" id="loginLink">LOGIN</a>
+              <button id= "logoutBtn" class="navlink" onclick="logout()">LOGOUT</button>
+
+          </div>
+        </div>
+
+
+        <!-- leaderboard table -->
+        <div style="display: flex; justify-content: center;">
+        <div class="leaderBoardTable">
+            <table id="leaderboard">
+              <thead>
+                <tr>
+                  <th>POSITION</th>
+                  <th>NAME</th>
+                  <th>SCORE</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+
+
+
+
+        </div>
+
+
+        <!-- footer -->
+        <div id="footer">
+
+            <p>Website by Syed Nasiruddin</p>
+
+        </div>
+
+    </body>
+    <script src= ../js/signupLoginLogout.js></script>
+    <script src= ../js/leaderboard.js></script>
+
+</html>
